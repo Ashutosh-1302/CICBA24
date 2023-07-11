@@ -14,7 +14,7 @@ export default function Home() {
     <h2 className='p-4'>Sixth International Conference on</h2>
     <h3 className="font-semibold text-3xl">Computational Intelligence in Communications and Business Analytics (CICBA-2024)</h3>
     </div>
-     <div className='p-4 flex items-center justify-center pb-4'>
+     <div className='p-4 flex items-center justify-center pb-4' style={{alignItems:'flex-end'}}>
                 <Holder/>
       </div>
       <div className="min-h-1 relative  mx-auto text-center p-3">
