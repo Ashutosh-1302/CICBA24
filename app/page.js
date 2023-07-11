@@ -1,10 +1,9 @@
 "use client"
 import {React,useState} from 'react';
 import Link from 'next/link';
-import Navbar from '@/components/Navbar';
-import Holder from '@/components/Holder';
-import Carousel from '@/components/Carousely';
-import Carousely from '@/components/Carousely';
+import Navbar from '@/components/CoverPageComponents/Navbar';
+import Holder from '@/components/CoverPageComponents/Holder';
+import Carousely from '@/components/CoverPageComponents/Carousely';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
