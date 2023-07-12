@@ -9,7 +9,7 @@ export default function Holder() {
         </div>
         <div className='flex flex-row pr-4'>
           <img src="http://www.cicba.in/cicba2023/images/logo.png" alt="CICBA Logo" style={{ height: '100px', width: '101px' }} />
-          <img src="https://www.nitp.ac.in/static/logo512-579d034908ae89b5e0243d1274937d5d.png" alt="NITP Logo" style={{ height: '300px', width: '301px' }} />
+          <img src="https://www.nitp.ac.in/static/logo512-579d034908ae89b5e0243d1274937d5d.png" alt="NITP Logo" style={{ height: '220px', width: '251px' }} />
         </div>
         <div>
           <img src="http://www.cicba.in/cicba2023/images/ccis_logo.png" alt="CCIC Image" />

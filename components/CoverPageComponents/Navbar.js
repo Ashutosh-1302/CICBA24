@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className='flex flex-row p-2 items-center'>
-          <ul className='flex flex-row p-2 items-center space-x-2'>
+          <ul className='flex flex-row p-2 items-center space-x-2 text-xl font-light'>
             {Menu_list.map((item) => (
               <li key={item.id}>
                 <a
