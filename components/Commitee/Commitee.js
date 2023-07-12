@@ -2,14 +2,22 @@ import React from 'react'
 
 export default function Commitee() {
   return (
-    <div className='flex flex-col w-1/2' style={{}}>
-      <div className='p-4 items-center shadow-md'>
-           <div><h2 className='text-3xl font-semibold text-red-500'>Editorial Board</h2></div>
+    <div className='flex flex-col w-full' style={{}}>
+      <div className='p-4 items-center bg-green-800'>
+           <div><h2 className='text-3xl font-semibold text-white text-left'>Editorial Board</h2></div>
       </div>
-      <div className='p-4 items-center flex shadow-md ' style={{border:'2px solid'}}>
-        <div className='p-4 items-center shadow-md w-full'>
-
-        </div>
+      <div className='p-4 items-left flex flex-col w-1/2 lg:w-1/2 md:w-full'>
+        <div className='p-4 items-center bg-green-800 rounded-sm w-full' style={{border:'1px solid'}}>
+        <h2 className='text-3xl font-semibold text-white text-left '>Members of Editorial Board</h2>
+        </div> 
+        <div className='p-4 items-center space-y-2 text-left w-full' style={{border:'1px solid'}}> 
+       <p className='pb-1'> 1.	Dr. J. P. Singh, Associate Professor, Dept of Computer Science & Engineering, NIT Patna<br/></p>
+       <p className='pb-1'> 2.	Prof. M. P. Singh, Professor, Dept of Computer Science & Engineering, NIT Patna<br/></p>
+       <p className='pb-1'> 3.	Dr. Amit Kumar Singh, Associate Professor, Dept of Computer Science & Engineering, NIT Patna<br/></p>
+       <p className='pb-1'>4.	Dr. Somnath Mukhopadhyay, Associate Professor, Dept of Computer Science & Engineering, Sikkim University, Sikkim<br/></p>
+       <p className='pb-1' > 5.	Prof. J. K. Mandal, Vice Chancellor,  Raiganj University<br/></p>
+       <p>6.	Prof. Paramartha Dutta, Professor, Dept. of Computer and System Sciences, Visva-Bharati University<br/></p>
+         </div>
       </div>
     </div>
   )

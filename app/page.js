@@ -7,6 +7,7 @@ import Footer from "@/components/CoverPageComponents/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import TracksTopic from "@/components/Tracks&Topic";
 import { Confrence } from "@/components/Confrence";
+import Commitee from "@/components/Commitee/Commitee";
 
 export default function Home() {
   return (
@@ -43,13 +44,15 @@ export default function Home() {
       </div>
 
       <Carousely />
-      <div className=" relative  text-center">
-        <TracksTopic />
+      <div  className="m-auto border-2 text-center w-3/4 lg:w-3/4 md:w-full">
+      {/* <div className="text-center" >
+        <TracksTopic className="w-1/2 lg:w-1/2 md:w-full" />
       </div>
       <div>
         <Confrence />
+      </div> */}
+      <Commitee/>
       </div>
-
       {/* Additional content specific to the home page */}
     </Layout>
   );

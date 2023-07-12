@@ -24,7 +24,7 @@ const LaLayout = ({ children }) => {
       {/* Links section */}
       
       {/* Content from each page */}
-      <div style={{ width: '50%', margin: '0 auto', border: '2px solid', textAlign: 'center' }}>
+      <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto border-2 text-center">
         {children}
       </div>
       

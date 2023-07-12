@@ -6,12 +6,12 @@ export default function TracksTopic() {
     <>
       <div className=" bg-white-200 pl-4 flex flex-row md:flex-row w-full">
         <div className="flex flex-row w-full ">
-          <div className="flex flex-row">
+          <div className="flex flex-row ">
             <div className=" flex-1 text-white text-center overflow-hidden text-5xl mb-2 m-2 mt-11 py-4 rounded-lg ">
-              <div className="bg-sky-600 -m-4 rounded-xl">
+              <div className="bg-sky-600 -m-4 rounded-xl " >
                 <p className="bg-white-300 text-xl">TRACKS & TOPIC</p>
               </div>
-              <div className="text-xl text-bold text-black py-5 flex m-3 overflow-auto">
+              <div className="text-xl text-bold text-black py-5 flex m-3">
                 <div className="flex flex-col">
                   <div className="text-left">
                     Computer Intelligence
