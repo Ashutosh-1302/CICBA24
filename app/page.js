@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Navbar from '@/components/CoverPageComponents/Navbar';
 import Holder from '@/components/CoverPageComponents/Holder';
 import Carousely from '@/components/CoverPageComponents/Carousely';
+import Footer from '@/components/CoverPageComponents/Footer';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,9 +39,9 @@ export default function Home() {
         <Navbar/>        
       </div>    
       <br/>
-      <div className='' style={{backgroundImage:`url("")`}}>
-        <Carousely/>
-     </div>
+      <div className='p-4 flex items-center justify-center pb-4'>
+      <Footer/>
+      </div>
      </div>
       )
 }
