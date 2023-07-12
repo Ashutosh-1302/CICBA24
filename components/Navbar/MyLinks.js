@@ -1,6 +1,6 @@
 export const links = [
   {
-    name: "For Auuthors",
+    name: "For Authors",
     submenu: true,
     sublinks: [
       {
