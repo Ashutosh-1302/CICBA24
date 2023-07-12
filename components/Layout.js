@@ -1,7 +1,37 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../components/Navbar/Navbar';
+import Holder from '../components/CoverPageComponents/Holder'
+import Footer from './CoverPageComponents/Footer';
 
-export default function Layout() {
+const Layout = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <div>
+      {/* Fixed content at the top */}
+      <div className="bg-gray-50 py-4 text-center">
+        <h2 className="text-xl font-semibold">
+          Fifth International Conference on
+        </h2>
+        <h3 className="text-3xl font-semibold pt-5">
+          Computational Intelligence in Communications and Business Analytics (CICBA-2023)
+        </h3>
+      </div>
+
+      {/* Content with Holder component */}
+      <div className="p-4 flex items-center justify-center">
+        <Holder />
+      </div>
+
+      {/* Links section */}
+      
+      {/* Content from each page */}
+      {children}
+
+      {/* Footer */}
+      <div className="p-4 flex items-center justify-center pb-4">
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default Layout;
