@@ -1,11 +1,11 @@
 "use client";
 import { React, useState } from "react";
-import Link from "next/link";
-// import Navbar from "@/components/CoverPageComponents/Navbar";
 import Holder from "@/components/CoverPageComponents/Holder";
 import Carousely from "@/components/CoverPageComponents/Carousely";
 import Footer from "@/components/CoverPageComponents/Footer";
 import Navbar from "@/components/Navbar/Navbar";
+import TracksTopic from "@/components/Tracks&Topic";
+import { Confrence } from "@/components/Confrence";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,7 +76,15 @@ export default function Home() {
         <Navbar />
       </div>
       <Carousely />
-      <div className="p-4 flex items-center justify-center pb-4">
+      <div className=" relative  text-center">
+        <TracksTopic />
+      </div>
+      <div>
+        <Confrence />
+      </div>
+
+      <div className=""></div>
+      <div className="p-4  flex items-center justify-center pb-4">
         <Footer />
       </div>
     </div>
