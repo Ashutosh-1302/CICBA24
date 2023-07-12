@@ -1,37 +1,98 @@
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styles from '../../styles/Carousely.module.css';
+import React, { useState } from "react";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
+import styles from "../../styles/Carousely.module.css";
 
 export default function Carousely() {
+  const slides = [
+    {
+      id: "1",
+      name: "CICBA-2023",
+      para: "Publish Your Research with Premium Publisher.",
+      date: "January 27-28,2023",
+      url: "/Assets/slide1.jpg",
+    },
+    {
+      id: "2",
+      name: "CICBA-2023",
+      para: "Listen from Pioneer Speakers.",
+      date: "January 27-28,2023",
+      url: "Assets/slide2.jpg",
+    },
+    {
+      id: "3",
+      name: "CICBA-2023",
+      para: "Meet Fabulous Personalities.",
+      date: "January 27-28,2023",
+      url: "/Assets/slide1.jpg",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
   return (
-    <div className={styles['carousel-container']}>
-      <Carousel showThumbs={false}>
-        <div className={`${styles.slide} grid grid-cols-2`}>
-          <div className={`content w-1/2 p-4 ${styles['left-content']}`}>
-            <h2 className="text-2xl font-bold">Left Content</h2>
-            <p className="text-lg">Some text or other components</p>
+    <>
+      <div className="text-black overflow-hidden text-xl">
+        {/* image slider */}
+        <div className="m-auto py-16 px-4 relative group">
+          <div
+            style={{
+              backgroundColor: "DeepSkyBlue",
+            }}
+            className="h-96 bg-center bg-cover duration-100"
+          >
+            <div className="flex flex-1 p-12">
+              <div>
+                <h2 className="text-3xl text-white font-bold  m-14 ">{`${slides[currentIndex].name}`}</h2>
+                <p className="text-xl text-white m-12">{`${slides[currentIndex].para}`}</p>
+                <h3 className="text-2xl text-white bg-gray-800  w-1/2 p-2 m-12">{`${slides[currentIndex].date}`}</h3>
+              </div>
+              <div
+                style={{
+                  backgroundImage: `url(${slides[currentIndex].url})`,
+                  width: "400px",
+                  height: "300px",
+                }}
+                className="w-full  ml-56"
+              ></div>
+            </div>
           </div>
-          <div className={`image w-1/2 flex items-center justify-center ${styles['right-content']}`}>
-            <img
-              src="http://www.cicba.in/cicba2023/images/slide1.jpg"
-              alt="image1"
-              className={styles['carousel-image']}
-            />
+          {/* Left Arrow */}
+          <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+            <BsChevronCompactLeft onClick={prevSlide} size={20} />
+          </div>
+          {/* Right Arrow */}
+          <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+            <BsChevronCompactRight onClick={nextSlide} size={20} />
+          </div>
+          <div className="flex top-4 justify-center py-2">
+            {slides.map((slides, slideIndex) => (
+              <div
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+                className="text-2xl cursor-pointer"
+              >
+                <RxDotFilled />
+              </div>
+            ))}
           </div>
         </div>
-        <div className={styles.slide}>
-          <div className={styles['left-half']}>
-            <h2>Left Content</h2>
-            <p>Some text or other components</p>
-          </div>
-          <div className={styles['right-half']}>
-            <img
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-              alt="image 2"
-            />
-          </div>
-        </div>
-      </Carousel>
-    </div>
+      </div>
+    </>
   );
 }
