@@ -4,6 +4,7 @@ import Holder from '@/components/CoverPageComponents/Holder';
 import Carousely from '@/components/CoverPageComponents/Carousely';
 import Footer from '@/components/CoverPageComponents/Footer';
 import Navbar from '@/components/Navbar/Navbar';
+import Commitee from '@/components/Commitee/Commitee';
 
 export default function Home() {
   return (
@@ -40,6 +41,10 @@ export default function Home() {
       </div>
 
       <Carousely />
+      <div className='p-4 flex items-center justify-center w-auto'>
+      <Commitee/>
+      </div>
+      
 {/* Additional content specific to the home page */}
     </Layout>
   );
