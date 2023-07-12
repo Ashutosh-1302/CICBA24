@@ -1,9 +1,12 @@
-import React from 'react';
-import Layout from '@/components/Layout';
-import Holder from '@/components/CoverPageComponents/Holder';
-import Carousely from '@/components/CoverPageComponents/Carousely';
-import Footer from '@/components/CoverPageComponents/Footer';
-import Navbar from '@/components/Navbar/Navbar';
+"use client";
+import { React, useState } from "react";
+import Layout from "@/components/Layout";
+import Holder from "@/components/CoverPageComponents/Holder";
+import Carousely from "@/components/CoverPageComponents/Carousely";
+import Footer from "@/components/CoverPageComponents/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import TracksTopic from "@/components/Tracks&Topic";
+import { Confrence } from "@/components/Confrence";
 
 export default function Home() {
   return (
@@ -40,7 +43,14 @@ export default function Home() {
       </div>
 
       <Carousely />
-{/* Additional content specific to the home page */}
+      <div className=" relative  text-center">
+        <TracksTopic />
+      </div>
+      <div>
+        <Confrence />
+      </div>
+
+      {/* Additional content specific to the home page */}
     </Layout>
   );
 }
