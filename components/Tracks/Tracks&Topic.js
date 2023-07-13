@@ -1,49 +1,40 @@
 import React from "react";
 import Confrence from "../Confrence";
+import ExpandableList from "./ExpandableList";
 
 export default function TracksTopic() {
   return (
-    <>
-      <div className="bg-white flex flex-row md:flex-col w-full">
-        <div className="flex flex-row md:flex-col  w-full ">
-          <div className="flex flex-row ">
-            <div className=" flex flex-col text-white text-left overflow-hidden text-4xl mb-2 m-2 mt-11 py-4 ">
-              <div className="bg-sky-600">
-                <p className="bg-white-300 text-2xl pl-3">
-                  Tracks of conference(Not Limited To)
-                </p>
-              </div>
-              <div className="text-xl font-medium text-black py-5 flex m-3">
-                <div className="flex flex-col">
-                  <div className="text-left">Computer Intelligence</div>
-                  <div className="text-sm py-2 text-left">
-                    <ol type="1">
-                      <li>Fuzzy Systems</li>
-                      <li>Machine Learning</li>
-                      <li>Evolutionary Computation</li>
-                      <li>Hybridization in Computational Intelligence</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div className="text-left">
-                Theories and Application to Data Communication and Analytics
-              </div>
-            </div>
-            <div className=" text-white text-center  mt-11 overflow-auto text-5xl py-4 pt-px-[169px] px-40 m-4 max-w-fit rounded-xl h-40">
-              <div className=" bg-sky-600 -m-4  rounded-xl">
-                <p className="bg-white-300 text-xl">NEWS UPDATE</p>
-              </div>
-              <div className="text-sm py-4 text-black">
-                <a href="/">Download Call for Paper of CICBA-2023</a>
-              </div>
-              <div className="text-sm  text-black">
-                <a href="/">Detailed Review Policy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <div className="flex  flex-row items-center w-full space-x-10">
+    <div className='flex flex-row items-center w-full space-x-10 pl-3 pr-3'>
+     <div className='w-full mb-5'>
+     <div className='p-2 items-center bg-green-800 rounded-sm w-full flex flex-row space-x-5' style={{border:'1px solid'}}>
+      <div className="justify-left h-15"><img src="./Assets/qrcode.png" className="h-8 w-15 pl-5"></img></div>
+      <div className="h-15">
+    <h2 className='text-xl font-semibold text-white text-center '>TRACKS & TOPICS</h2>
+    </div>
+    </div>
+    <div className='p-1 items-center text-left w-full flex-row space-y-3'>
+        
+      <div><ExpandableList className="flex"/></div>
+      <div><a className='text-blue-500 font-semibold text-l'>Theories and Applications to Data Communications and Analytics</a>
+    </div>
+       </div>
+    </div>
+</div>
+<div className='flex flex-row items-center w-full space-x-10 pl-3 pr-3'>
+     <div className='w-full mb-5'>
+     <div className='p-2 items-center bg-green-800 rounded-sm w-full flex flex-row space-x-5' style={{border:'1px solid'}}>
+      <div className="justify-left h-15"><img src="./Assets/information.png" className="h-8 w-15 pl-5"></img></div>
+      <div className="h-15">
+    <h2 className='text-xl font-semibold text-white text-center '>TRACKS & TOPICS</h2>
+    </div>
+    </div>
+    <div className='p-1 items-center text-left w-full'>
+    <p className='pb-1'> 		Dr. J. P. Singh, Associate Professor, Dept of Computer Science & Engineering, NIT Patna<br/></p>
+    <p className=''>		Dr. Somnath Mukhopadhyay, Associate Professor, Dept of Computer Science & Engineering, Sikkim University, Sikkim<br/></p>
+     </div>
+    </div>
+</div>
+</div>
   );
 }

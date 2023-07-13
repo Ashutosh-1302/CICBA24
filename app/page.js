@@ -3,14 +3,8 @@ import { React, useState } from "react";
 import Layout from "@/components/Layout";
 import Holder from "@/components/CoverPageComponents/Holder";
 import Carousely from "@/components/CoverPageComponents/Carousely";
-import Footer from "@/components/CoverPageComponents/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 import TracksTopic from "@/components/Tracks/Tracks&Topic";
 import { Confrence } from "@/components/Confrence";
-import Commitee from "@/components/Commitee/Commitee";
-import Chairs from "@/components/Commitee/Chairs";
-import ProgramCommitee from "@/components/Commitee/ProgramCommitee";
-import TPC from "@/components/Commitee/TPC";
 
 export default function Home() {
   return (
@@ -48,14 +42,14 @@ export default function Home() {
         </div>
 
         <Carousely />
-        <div className="m-auto border-2 text-center w-3/4 lg:w-3/4 md:w-full">
+        <div className="m-auto border-2 text-center w-5/6 lg:w-5/6  md:w-full">
           <div className="text-center">
             <TracksTopic />
+             </div>
+          <div className="text-center">
+          <Confrence />
           </div>
-          <div>
-            <Confrence />
           </div>
-        </div>
         {/* Additional content specific to the home page */}
       </Layout>
     </>

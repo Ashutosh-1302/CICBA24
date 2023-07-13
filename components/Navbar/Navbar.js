@@ -10,9 +10,9 @@ import { FaGreaterThan } from "react-icons/fa";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-slate-600">
-      <div className="flex items-center font-medium justify-around">
-        <div className="z-50 p-5 md:w-auto  flex justify-between ">
+    <nav className="bg-slate-600 mx-auto">
+      <div className="flex items-center font-medium justify-around px-4">
+        <div className="z-50 p-2 md:w-auto  flex justify-between ">
           <Link href="/">
             <img
               className="h-9 w-12"
@@ -21,7 +21,7 @@ const Navbar = () => {
             />
           </Link>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
-            <FaGreaterThan name={`${open ? "close" : "menu"}`} />
+            <FaGreaterThan name={`${open ? "close" : "menu"}`}  className="width-[14px] height-[14px]"/>
           </div>
         </div>
         <ul

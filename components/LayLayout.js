@@ -31,7 +31,6 @@ const LaLayout = ({ children }) => {
       <div className='mb-3' style={{height:"100px",width:'full', backgroundImage: `url('./Assets/background.jpg')`,
               backgroundSize: '100% ',
               backgroundRepeat: 'no-repeat',}} >
-      Hekkko
             </div>
       <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto border-2 text-center mb-8">
         {children}

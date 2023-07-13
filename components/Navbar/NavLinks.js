@@ -79,7 +79,7 @@ const NavLinks = () => {
                     className="py-4 pl-7 font-semibold  flex justify-between items-center  md:pr-0 pr-5"
                   >
                     <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <FaGreaterThan
+                      <FaGreaterThan className="width-[14px] height-[14px]"
                         name={`${
                           subHeading === slinks.Head
                             ? "chevron-up"
