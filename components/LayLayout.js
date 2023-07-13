@@ -12,7 +12,7 @@ const LaLayout = ({ children }) => {
           Sixth International Conference on
         </h2>
         <h3 className="text-3xl font-semibold pt-5">
-          Computational Intelligence in Communications and Business Analytics (CICBA-2023)
+          Computational Intelligence in Communications and Business Analytics (CICBA-2024)
         </h3>
       </div>
 
@@ -28,11 +28,10 @@ const LaLayout = ({ children }) => {
       {/* Links section */}
       
       {/* Content from each page */}
-      <div className='w-full h-1/4' style={{
-              backgroundImage: `url('./Assets/background.jpg')`,
-              backgroundSize: 'fit',
-              backgroundRepeat: 'no-repeat',
-            }}>
+      <div className='mb-3' style={{height:"100px",width:'full', backgroundImage: `url('./Assets/background.jpg')`,
+              backgroundSize: '100% ',
+              backgroundRepeat: 'no-repeat',}} >
+      Hekkko
             </div>
       <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto border-2 text-center mb-8">
         {children}

@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
            International Conference on
         </h2>
         <h3 className="text-3xl font-semibold pt-5">
-          Computational Intelligence in Communications and Business Analytics (CICBA-2023)
+          Computational Intelligence in Communications and Business Analytics (CICBA-2024)
         </h3>
       </div>
 
