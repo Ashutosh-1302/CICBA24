@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Commitee() {
   return (
-    <div className='flex flex-col w-full' style={{}}>
+    <div className='flex flex-col w-full'>
       <div className='p-4 items-center bg-green-800'>
            <div><h2 className='text-3xl font-semibold text-white text-left'>Editorial Board</h2></div>
       </div>

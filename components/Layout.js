@@ -5,7 +5,7 @@ import Footer from './CoverPageComponents/Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className='w-full'>
       {/* Fixed content at the top */}
       <div className="bg-gray-50 py-4 text-center">
         <h2 className="text-xl font-semibold">
