@@ -1,16 +1,18 @@
-import React from 'react';
-import './globals.css';
-import Navbar from '@/components/Navbar/Navbar';
+import React from "react";
+import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar/>
-
+        <div className="">
+          <Navbar />
+        </div>
         <div className="container">
           <div className="content">{children}</div>
         </div>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
       </body>
     </html>
   );
