@@ -9,6 +9,8 @@ import TracksTopic from "@/components/Tracks&Topic";
 import { Confrence } from "@/components/Confrence";
 import Commitee from "@/components/Commitee/Commitee";
 import Chairs from "@/components/Commitee/Chairs";
+import ProgramCommitee from "@/components/Commitee/ProgramCommitee";
+import TPC from "@/components/Commitee/TPC";
 
 export default function Home() {
   return (
@@ -52,7 +54,7 @@ export default function Home() {
       <div>
         <Confrence />
       </div> */}
-      <Chairs/>
+      <TPC/>
       </div>
       {/* Additional content specific to the home page */}
     </Layout>
