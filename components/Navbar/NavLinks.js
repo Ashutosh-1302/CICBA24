@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
 import { links } from "./MyLinks";
+import { FaGreaterThan } from "react-icons/fa";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
@@ -12,7 +13,7 @@ const NavLinks = () => {
         <div>
           <div className="px-3  text-left md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group text-white"
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 group md:text-white text-white"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -20,14 +21,14 @@ const NavLinks = () => {
             >
               {link.name}
               <span className="text-xl md:hidden inline">
-                <ion-icon
+                <FaGreaterThan
                   name={`${
                     heading === link.name ? "chevron-up" : "chevron-down"
                   }`}
-                ></ion-icon>
+                />
               </span>
               <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
-                <ion-icon name="chevron-down"></ion-icon>
+                <FaGreaterThan name="chevron-down" />
               </span>
             </h1>
             {link.submenu && (
@@ -44,7 +45,10 @@ const NavLinks = () => {
                       <div>
                         {mysublinks.sublink.map((slink) => (
                           <li className="text-sm text-white ">
-                            <Link href={slink.href} className="hover:text-primary text-white">
+                            <Link
+                              href={slink.href}
+                              className="hover:text-primary text-white"
+                            >
                               {slink.name}
                             </Link>
                           </li>
@@ -72,18 +76,16 @@ const NavLinks = () => {
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="py-4 pl-7 font-semibold  flex justify-between items-center md:pr-0 pr-5"
+                    className="py-4 pl-7 font-semibold  flex justify-between items-center  md:pr-0 pr-5"
                   >
-                    {slinks.Head}
-
                     <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <ion-icon
+                      <FaGreaterThan
                         name={`${
                           subHeading === slinks.Head
                             ? "chevron-up"
                             : "chevron-down"
                         }`}
-                      ></ion-icon>
+                      />
                     </span>
                   </h1>
                   <div
@@ -92,7 +94,7 @@ const NavLinks = () => {
                     }`}
                   >
                     {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14">
+                      <li className="py-3 pl-14 text-white">
                         <Link href={slink.href}>{slink.name}</Link>
                       </li>
                     ))}
