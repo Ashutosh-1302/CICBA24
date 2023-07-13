@@ -20,7 +20,11 @@ const LaLayout = ({ children }) => {
       <div className="p-4 flex items-center justify-center">
         <Holder />
       </div>
-
+      <div className="bg-gray-50 py-4 text-center pb-4 mb-4">
+      <h2 className="text-xl font-bold text-orange-500">The proceedings will be published with Springer in their Communications in Computer and Information Science (CCIS) Series (SCImago, Scopus, DBLP)</h2>
+      
+      </div>
+      
       {/* Links section */}
       
       {/* Content from each page */}

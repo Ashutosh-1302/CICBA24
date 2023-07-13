@@ -26,9 +26,9 @@ const Navbar = () => {
         </div>
         <ul className="md:flex hidden uppercase items-center gap-6 font-[Poppins] justify-center">
           <li>
-            <a href="/Speaker" className="py-7 px-3 inline-block text-white">
+            <Link href="/Speaker" className="py-7 px-3 inline-block text-white">
               Speakers
-            </a>
+            </Link>
           </li>
           <NavLinks />
           {/* <Button /> */}
@@ -43,24 +43,24 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="/" className="py-7 px-3 inline-block text-white">
+            <Link href="/Dates" className="py-7 px-3 inline-block text-white">
               DATES
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="py-7 px-3 inline-block text-white">
+            <Link href="/Sponsorship" className="py-7 px-3 inline-block text-white">
               SPONSORSHIP
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Gallery" className="py-7 px-3 inline-block text-white">
+            <Link href="/Gallery" className="py-7 px-3 inline-block text-white">
               GALLERY
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="py-7 px-3 inline-block text-white">
+            <Link href="/Contact" className="py-7 px-3 inline-block text-white">
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="md:block hidden text-white"></div>

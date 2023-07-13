@@ -1,11 +1,11 @@
-import React from 'react'
+import Submission from '@/components/Authors/Submission'
 import LaLayout from '@/components/LayLayout'
-import CallForPaper from '@/components/CallForPaper/CallForPaper'
+import React from 'react'
 
 export default function page() {
   return (
     <LaLayout>
-      <CallForPaper/>
+        <Submission/>
     </LaLayout>
   )
 }

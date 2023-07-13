@@ -1,11 +1,13 @@
-import React from 'react'
+import Dates from '@/components/Dates/Dates'
 import LaLayout from '@/components/LayLayout'
-import CallForPaper from '@/components/CallForPaper/CallForPaper'
+import React from 'react'
 
 export default function page() {
   return (
     <LaLayout>
-      <CallForPaper/>
+        
+        <Dates/>
+        
     </LaLayout>
   )
 }

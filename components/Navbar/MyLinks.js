@@ -5,8 +5,8 @@ export const links = [
     sublinks: [
       {
         sublink: [
-          { name: "Submission", href: "/Submission" },
-          { name: "Registration", href: "/Registration" },
+          { name: "Submission", href: "/Authors/Submission" },
+          { name: "Registration", href: "/Authors/Registration" },
           { name: "Paper Template for LaTeX2a", href: "/" },
           { name: "Paper Template for MS Word", href: "/" },
         ],
