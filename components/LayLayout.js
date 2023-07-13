@@ -24,13 +24,19 @@ const LaLayout = ({ children }) => {
       {/* Links section */}
       
       {/* Content from each page */}
-      <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto border-2 text-center">
+      <div className='w-full h-1/4' style={{
+              backgroundImage: `url('./Assets/background.jpg')`,
+              backgroundSize: 'fit',
+              backgroundRepeat: 'no-repeat',
+            }}>
+            </div>
+      <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto border-2 text-center mb-8">
         {children}
       </div>
       
 
       {/* Footer */}
-      <div className="p-4 flex items-center justify-center pb-4">
+      <div className="p-4 flex items-center justify-center pb-4 mt-2">
         <Footer />
       </div>
     </div>

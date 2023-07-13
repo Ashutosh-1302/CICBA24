@@ -66,7 +66,7 @@ export default function Carousely() {
           <div
             className="h-98 bg-center bg-cover duration-100 w-full"
             style={{
-              backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTTJvJo-whPOw-imNSISi4XWHDacuTi1fGYg&usqp=CAU')`,
+              backgroundImage: `url('./Assets/background.jpg')`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
