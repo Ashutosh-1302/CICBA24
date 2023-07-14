@@ -13,23 +13,13 @@ const NavLinks = () => {
         <div>
           <div className="px-3  text-left md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group md:text-white text-white"
+              className=" hover:bg-green-700 flex justify-between items-center md:pr-0 pr-5 group md:text-white text-white"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
               }}
             >
-              {link.name}
-              <span className="text-xl md:hidden inline">
-                <FaGreaterThan
-                  name={`${
-                    heading === link.name ? "chevron-up" : "chevron-down"
-                  }`}
-                />
-              </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
-                <FaGreaterThan name="chevron-down" />
-              </span>
+              <a href={link.href}>{link.name}</a>
             </h1>
             {link.submenu && (
               <div>
@@ -40,7 +30,7 @@ const NavLinks = () => {
                     mt-1 bg-white rotate-45"
                     ></div>
                   </div>
-                  <div className="bg-gray-500 p-5 grid grid-cols-3 gap-10">
+                  <div className="bg-gray-500 p-5 grid  gap-10">
                     {link.sublinks.map((mysublinks) => (
                       <div>
                         {mysublinks.sublink.map((slink) => (
@@ -63,45 +53,27 @@ const NavLinks = () => {
           {/* Mobile menus */}
           <div
             className={`
-            ${heading === link.name ? "md:hidden" : "hidden"}
+            ${heading === link.name ? "md:hidden" : "md:hidden"}
           `}
           >
             {/* sublinks */}
-            {link.sublinks.map((slinks) => (
-              <div>
+
+            <div>
+              {link.sublinks.map((slinks) => (
                 <div>
-                  <h1
-                    onClick={() =>
-                      subHeading !== slinks.Head
-                        ? setSubHeading(slinks.Head)
-                        : setSubHeading("")
-                    }
-                    className="py-4 pl-7 font-semibold  flex justify-between items-center  md:pr-0 pr-5"
-                  >
-                    <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <FaGreaterThan className="width-[14px] height-[14px]"
-                        name={`${
-                          subHeading === slinks.Head
-                            ? "chevron-up"
-                            : "chevron-down"
-                        }`}
-                      />
-                    </span>
-                  </h1>
                   <div
-                    className={`${
-                      subHeading === slinks.Head ? "md:hidden" : "hidden"
-                    }`}
+                    className={`
+                   ${subHeading === slinks.Head ? "md:hidden" : "md:hidden"}`}
                   >
                     {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14 text-white">
-                        <Link href={slink.href}>{slink.name}</Link>
+                      <li className="py-2 pl-12 text-white hover:bg-green-700 ">
+                        <a href={slink.href}>{slink.name}</a>
                       </li>
                     ))}
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       ))}
