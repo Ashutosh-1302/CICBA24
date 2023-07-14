@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
         <div className="">
           <Navbar />
         </div>
-        <div className="container">
+        <div className="container mt-[100px]">
           <div className="content">{children}</div>
         </div>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
