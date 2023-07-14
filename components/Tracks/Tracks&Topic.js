@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import Confrence from "../Confrence";
+import Confrence from "../Conference";
 import ExpandableList from "./ExpandableList";
 
 export default function TracksTopic() {
