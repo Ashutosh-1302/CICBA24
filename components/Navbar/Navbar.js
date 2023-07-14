@@ -9,32 +9,32 @@ import { FaGreaterThan } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.pageYOffset > 0);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.pageYOffset > 0);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  const navbarStyle = {
-    position: 'fixed',
-    top: 0,
-    width: '100%',
-    boxShadow: isScrolled ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
-    // Add other styling properties
-  };
+  // const navbarStyle = {
+  //   position: 'fixed',
+  //   top: 0,
+  //   width: '100%',
+  //   boxShadow: isScrolled ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
+  //   // Add other styling properties
+  // };
 
 
 
   return (
-    <nav className="bg-slate-600" style={navbarStyle}>
+    <nav className="bg-slate-600 z-50">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto  flex justify-between ">
           <a href="/">
@@ -54,7 +54,7 @@ const Navbar = () => {
           </Link>
           <div
             className="text-sm md:hidden text-white   rotate-90"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen(!open) ? "close" : "menu"}
           >
             <FaGreaterThan name={`${open ? "close" : "show"}`} />
           </div>

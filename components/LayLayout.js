@@ -32,7 +32,7 @@ const LaLayout = ({ children }) => {
               backgroundSize: '100% ',
               backgroundRepeat: 'no-repeat',}} >
             </div>
-      <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto border-2 text-center mb-8">
+      <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto  border-2 text-center mb-8">
         {children}
       </div>
       

@@ -8,32 +8,32 @@ const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.pageYOffset > 0);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.pageYOffset > 0);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  const navbarStyle = {
-    position: 'fixed',
-    top: 0,
-    width: '100%',
-    boxShadow: isScrolled ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
-    // Add other styling properties
-  };
+  // const navbarStyle = {
+  //   position: 'fixed',
+  //   top: 0,
+  //   width: '100%',
+  //   boxShadow: isScrolled ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
+  //   // Add other styling properties
+  // };
 
   return (
     <>
       {links.map((link) => (
-        <div style={{navbarStyle}}>
+        <div>
           <div className="px-3  text-left md:cursor-pointer group">
             <h1
               className=" hover:bg-green-700 flex justify-between items-center md:pr-0 pr-5 group md:text-white text-white"
