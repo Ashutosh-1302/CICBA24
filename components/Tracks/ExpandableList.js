@@ -8,8 +8,8 @@ const ExpandableList = () => {
   };
 
   return (
-    <div >
-      <button onClick={toggleList} className='text-blue-500 font-semibold text-l'>
+    <div className='flex flex-row' ><div className="justify-left h-15 pt-2 pr-4"><img src="./Assets/rightarrow.png" className="w-8 pl-5" /></div>
+     <div> <button onClick={toggleList} className='text-blue-500 font-semibold text-l'>
         {isListExpanded ? 'Computational Intelligence' : 'Computational Intelligence'}
       </button>
       {isListExpanded && (
@@ -20,6 +20,7 @@ const ExpandableList = () => {
           <li>4.Hybridization in Computational Intelligence</li>
         </ol>
       )}
+    </div>
     </div>
   );
 };
