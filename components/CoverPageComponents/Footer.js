@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto py-8 flex flex-col lg:flex-row justify-between lg:gap-16 pl-10">
+      <div className="container py-8 flex flex-col lg:flex-row justify-between lg:gap-16 pl-10">
         {/* Social Media Links */}
-        <div className="flex flex-wrap  flex-col space-x-6 mb-6 lg:mb-0">
+        <div className="flex flex-wrap  flex-col mb-6 lg:mb-0">
           <div>
             <h2 className="text-2xl font-semibold text-white">Follow us</h2>
             <hr style={{ borderColor: "red", borderRadius: "2px" }}></hr>
@@ -21,6 +21,10 @@ const Footer = () => {
               Instagram
             </a>
           </div>
+          <br/>
+          <div className="text-gray-400 ">
+          &copy; 2023 Conference Name. All rights reserved.
+        </div>
         </div>
 
         {/* Contact Details */}
@@ -32,6 +36,8 @@ const Footer = () => {
           <p className="text-gray-400">
             Address: 123 Conference Street, City, Country
           </p>
+          <br/>
+          <div className="text-gray-400">* Final Approval Pending</div>
         </div>
 
         {/* Additional Links */}
@@ -50,15 +56,6 @@ const Footer = () => {
           </a>
           <br />
           <hr style={{ borderColor: "red", borderRadius: "2px" }}></hr>
-        </div>
-      </div>
-      <div className="container mx-auto text-center pr-10 flex flex-wrap flex-row lg:gap-16 pb-4">
-        <div className="text-gray-400 lg:pl-3">
-          &copy; 2023 Conference Name. All rights reserved.
-        </div>
-        <div className="text-gray-400">* Final Approval Pending</div>
-        <div className="text-gray-400  lg:pl-[120px]">
-          Designed and Maintained by: Ashutosh Singh & Arun Singh
         </div>
       </div>
     </footer>

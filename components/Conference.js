@@ -32,6 +32,7 @@ export const Conference = () => {
                 paddingTop: "0",
                 marginRight: "auto",
                 fontSize: "16px",
+                ineHeight: "1",
               }}
             >
               <span
@@ -142,23 +143,28 @@ export const Conference = () => {
       </div>
 
       <div className="pt-4">
-        <div className="flex flex-row" id="institute">
-          <div className="w-96 m-6">
-            <img src="Assets/nitpatna.jpg" alt="" />
+      <h2
+          className="text-center text-xl font-bold pl-1"
+          style={{
+            background:
+              "repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(0, 0, 0, 0.1) 5px, rgba(0, 0, 0, 0.1) 10px)",
+            backgroundSize: "10px 100%",
+            height: "auto",
+            backgroundRepeat: "repeat",
+          }}
+        >
+          National Institute Of Technology,Patna
+        </h2>
+        <div className="flex flex-row space-x-4 pb-3 p-3" id="institute" >
+          <div className="pt-3">
+            <img src="Assets/nitpatna.jpg" className="" alt="" />
           </div>
-          <div className="">
-            <span className="pl-12 font-bold">
-              NATIONAL INSTITUTE OF TECHNOLOGY PATNA
-            </span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-              id reprehenderit sunt eaque repellendus vero ducimus iste eius
-              ratione deserunt quasi in tempore numquam reiciendis illum
-              consectetur, ut dolore itaque vel optio voluptas, enim rem illo! Ad
-              recusandae est nobis?
-            </p>
-          </div>
-        </div>
+          <div className="pt-4 pl-6=">
+  <p style={{ marginLeft: 0 }}>
+  National Institute of Technology Patna is the 18th National Institute of Technology created by the Ministry of H.R.D. Government of India after rechristening the erstwhile Bihar College of Engineering Patna on 28. 01. 2004. NIT Patna marked its humble beginning in 1886 with the establishment of pleaders survey training school which was subsequently promoted of Bihar College of Engineering Patna in 1924. This made this institute the 6th Oldest Engineering Institute of India.  The institute is situated on the south bank of holy river Ganges behind Gandhi Ghat, one of the most important and reverential place of Patna. 
+  </p>
+</div>
+</div>
       </div>
     </>
   );

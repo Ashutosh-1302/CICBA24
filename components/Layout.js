@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
       {children}
 
       {/* Footer */}
-      <div className="p-4 flex items-center justify-center pb-4">
-        <Footer />
+      <div className="w-full">
+        <Footer  className="pl-5"/>
       </div>
     </div>
   );

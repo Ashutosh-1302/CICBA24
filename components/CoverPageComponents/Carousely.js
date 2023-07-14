@@ -53,11 +53,11 @@ export default function Carousely() {
     setIsSmallView(window.innerWidth <= 768);
   };
 
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <>
@@ -74,11 +74,11 @@ export default function Carousely() {
           >
             <div className="flex flex-row p-12 space-x-60">
               <div className="pl-6">
-                <h2 className="text-3xl text-white font-bold m-14">{slides[currentIndex].name}</h2>
+                <h2 className="text-4xl text-white font-bold m-14">{slides[currentIndex].name}</h2>
                 <p className="text-xl text-white m-12">{slides[currentIndex].para}</p>
                 <h3 className="text-2xl text-white bg-gray-800 w-1/2 p-2 m-12">{slides[currentIndex].date}</h3>
               </div>
-              <div className="w-1/2 relative">
+              <div className="w-1/2 relative pt-6 pl-3">
                 {isSmallView ? (
                   <div className="absolute bottom-2 right-2 w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center pr-5">
                     <img

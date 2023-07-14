@@ -9,7 +9,7 @@ export default function Submission() {
             </div>
             <div className='p-4 items-center space-y-2 text-left w-full'>
             <p className='pb-1 text-xl'>Full papers (Upto 15 pages in the one-column page format without author information, must be submitted through Easy Chair portal.) <br/></p><br/>
-            <a className='pb-1 font-bold text-blue-400 text-2xl ' href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" >Formatting Guidelines: http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0 </a>
+            <a className='pb-1 font-bold text-blue-400 text-2xl w-fit' href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" >Formatting Guidelines: http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0 </a>
             <br/><br/><a className='pb-1 font-bold text-blue-400 text-2xl ' href="http://www.cicba.in/cicba2023/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf" >Author's Guidelines</a>
             <br/><br/>
             <h1 className='font-bold text-2xl'>Submission Guideline:</h1>
