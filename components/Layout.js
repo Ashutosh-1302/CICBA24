@@ -9,10 +9,10 @@ const Layout = ({ children }) => {
       {/* Fixed content at the top */}
       <div className="bg-gray-50 py-4 text-center">
         <h2 className="text-xl font-semibold">
-           International Conference on
+         Sixth  International Conference on
         </h2>
         <h3 className="text-3xl font-semibold pt-5">
-          Computational Intelligence in Communications and Business Analytics (CICBA-2023)
+          Computational Intelligence in Communications and Business Analytics (CICBA-2024)
         </h3>
       </div>
 

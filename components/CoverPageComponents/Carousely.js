@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import Image from "next/image";
 import styles from "../../styles/Carousely.module.css";
 
 export default function Carousely() {
