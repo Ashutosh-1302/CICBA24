@@ -1,15 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import Holder from '../components/CoverPageComponents/Holder'
-import Footer from './CoverPageComponents/Footer';
+import Holder from '@/components/CoverPageComponents/Holder';
+import Footer from '@/components/CoverPageComponents/Footer';
+import Carousely from './CoverPageComponents/Carousely';
 
 const Layout = ({ children }) => {
   return (
-    <div className='w-full'>
+    <div className="w-full flex flex-col items-center overflow-x-hidden">
       {/* Fixed content at the top */}
       <div className="bg-gray-50 py-4 text-center">
         <h2 className="text-xl font-semibold">
-         Sixth  International Conference on
+          Sixth International Conference on
         </h2>
         <h3 className="text-3xl font-semibold pt-5">
           Computational Intelligence in Communications and Business Analytics (CICBA-2024)
@@ -22,13 +23,48 @@ const Layout = ({ children }) => {
       </div>
 
       {/* Links section */}
-      
+      <div className="p-3 text-center">
+        {/* Links */}
+        {/* Add responsive classes to adjust layout on smaller views */}
+        <div className="flex flex-col md:flex-row md:justify-center md:space-x-4">
+          <a
+            className="block text-xl text-orange-900 font-semibold hover:text-blue-900 pt-2"
+            target="_blank"
+            href="/"
+          >
+            Presentation Template
+          </a>
+          <a
+            className="block text-xl text-green-500 font-semibold hover:text-blue-900 pt-2"
+            target="_blank"
+            href="http://www.cicba.in/cicba2023/CICBA%202023%20ORAL%20List.pdf"
+          >
+            List of papers accepted for oral presentation
+          </a>
+          <a
+            className="block text-xl text-violet-900 font-semibold hover:text-blue-900 pt-2"
+            target="_blank"
+            href="http://www.cicba.in/cicba2023/CICBA2023_Acceptedand_Registered_Papers.pdf"
+          >
+            List of Accepted And Registered Papers
+          </a>
+          <a
+            className="block text-xl text-red-600 font-semibold hover:text-blue-900 pt-2"
+            target="_blank"
+            href="http://www.cicba.in/cicba2023/CICBA%202023%20Program%2027%20Jan.pdf"
+          >
+            Program Schedule
+          </a>
+        </div>
+      </div>
+
       {/* Content from each page */}
-      {children}
+      <Carousely/>
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
 
       {/* Footer */}
       <div className="w-full">
-        <Footer  className="pl-5"/>
+        <Footer className="pl-5" />
       </div>
     </div>
   );

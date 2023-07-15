@@ -10,15 +10,15 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="p-3 text-center">
-          {/* Links */}
-        </div>
-
-        <Carousely />
-
-        <div className="m-auto text-center w-5/6 lg:w-5/6 md:w-full ">
-          <TracksTopic />
-          <Conference />
+        
+<div className="flex flex-col items-center">
+         
+          <div className="w-full md:w-5/6 lg:w-3/4">
+            <div className="m-auto text-center">
+              <TracksTopic />
+              <Conference />
+            </div>
+          </div>
         </div>
 
         {/* Additional content specific to the home page */}

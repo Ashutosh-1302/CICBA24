@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import Holder from '../components/CoverPageComponents/Holder'
+import Holder from '../components/CoverPageComponents/Holder';
 import Footer from './CoverPageComponents/Footer';
 
 const LaLayout = ({ children }) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       {/* Fixed content at the top */}
       <div className="bg-gray-50 py-4 text-center">
         <h2 className="text-xl font-semibold">
@@ -17,25 +17,33 @@ const LaLayout = ({ children }) => {
       </div>
 
       {/* Content with Holder component */}
-      <div className="p-4 flex items-center justify-center">
+      <div className="flex-grow p-4 flex items-center justify-center">
         <Holder />
       </div>
-      <div className="bg-gray-50 py-4 text-center pb-4 mb-4">
+
+      {/* Links section */}
+     
+  <div className="bg-gray-50 py-4 text-center pb-4 mb-4">
       <h2 className="text-xl font-bold text-orange-500">The proceedings will be published with Springer in their Communications in Computer and Information Science (CCIS) Series (SCImago, Scopus, DBLP)</h2>
       
       </div>
-      
-      {/* Links section */}
-      
+
+      {/* Image div */}
+      <div
+        className="mb-3"
+        style={{
+          height: "80px",
+          width: "100%",
+          backgroundImage: `url('./Assets/background.jpg')`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
+
       {/* Content from each page */}
-      <div className='mb-3' style={{height:"100px",width:'full', backgroundImage: `url('./Assets/background.jpg')`,
-              backgroundSize: '100% ',
-              backgroundRepeat: 'no-repeat',}} >
-            </div>
-      <div  className="w-3/4  lg:w-3/4 md:w-full  mx-auto  border-2 text-center mb-8">
-        {children}
+      <div className="flex-grow flex justify-center items-center">
+        <div className="w-11/12 lg:w-3/4 xl:w-3/4">{children}</div>
       </div>
-      
 
       {/* Footer */}
       <div className="p-4 flex items-center justify-center pb-4 mt-2">

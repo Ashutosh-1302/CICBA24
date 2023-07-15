@@ -11,11 +11,11 @@ export default function TracksTopic() {
   };
 
   return (
-    <div className="flex flex-row lg:flex-row md:flex-col items-start w-full space-x-10">
-      <div className="flex flex-row lg:flex-row md:flex-col items-center w-full space-x-10 pl-3 pr-3 lg:w-full md:w-1/2">
+    <div className="flex flex-col lg:flex-row md:flex-col items-start w-full lg:space-x-10">
+      <div className="w-full lg:w-1/2">
         <div className="w-full" style={{ border: "1px solid" }}>
           <div
-            className="p-2 items-center bg-green-800 rounded-sm w-full flex flex-row space-x-5 lg:flex-row md:flex-col"
+            className="p-2 items-center bg-green-800 rounded-sm w-full flex flex-row space-x-5"
           >
             <div className="justify-left h-15">
               <img src="./Assets/qrcode.png" className="h-8 w-15 pl-5" />
@@ -26,7 +26,7 @@ export default function TracksTopic() {
               </h2>
             </div>
           </div>
-          <div className="p-1 items-center text-left w-full flex-row space-y-3">
+          <div className="p-1 items-center text-left w-full space-y-3">
             <ExpandableList />
             <div className="flex flex-row">
               <div className="justify-left h-15 pt-2 pr-4">
@@ -41,10 +41,10 @@ export default function TracksTopic() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row lg:flex-row md:flex-col items-start w-full space-x-10 pl-3 pr-3 lg:w-full md:w-1/2">
+      <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
         <div className="w-full" style={{ border: "1px solid" }}>
           <div
-            className="p-2 items-center bg-green-800 rounded-sm w-full flex flex-row space-x-5 lg:flex-row md:flex-col"
+            className="p-2 items-center bg-green-800 rounded-sm w-full flex flex-row space-x-5"
           >
             <div className="justify-left h-15">
               <img src="./Assets/information.png" className="h-8 w-15 pl-5" />
@@ -55,7 +55,7 @@ export default function TracksTopic() {
               </h2>
             </div>
           </div>
-          <div className="p-1 items-center text-left w-full flex-row space-y-3" style={{ position: "sticky", top: 0 }}>
+          <div className="p-1 items-center text-left w-full space-y-3" style={{ position: "sticky", top: 0 }}>
             <div className="flex flex-row">
               <div className="justify-left h-15 pt-2 pr-4">
                 <img src="./Assets/rightarrow.png" className="w-8 pl-5" />
