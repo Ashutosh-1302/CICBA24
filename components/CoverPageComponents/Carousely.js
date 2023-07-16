@@ -9,23 +9,23 @@ export default function Carousely() {
   const slides = [
     {
       id: "1",
-      name: "CICBA-2023",
+      name: "CICBA-2024",
       para: "Publish Your Research with Premium Publisher.",
-      date: "January 27-28, 2023",
+      date: "January 23-25, 2024",
       url: "/Assets/slide1.jpg",
     },
     {
       id: "2",
-      name: "CICBA-2023",
+      name: "CICBA-2024",
       para: "Listen from Pioneer Speakers.",
-      date: "January 27-28, 2023",
-      url: "Assets/slide2.jpg",
+      date: "January 23-25, 2024",
+      url: "Assets/slide1.jpg",
     },
     {
       id: "3",
-      name: "CICBA-2023",
+      name: "CICBA-2024",
       para: "Meet Fabulous Personalities.",
-      date: "January 27-28, 2023",
+      date: "January 23-25, 2024",
       url: "/Assets/slide1.jpg",
     },
   ];
@@ -74,9 +74,9 @@ export default function Carousely() {
           >
             <div className="flex flex-row p-12 space-x-60">
               <div className="pl-6">
-                <h2 className="text-4xl text-white font-bold m-14">{slides[currentIndex].name}</h2>
-                <p className="text-xl text-white m-12">{slides[currentIndex].para}</p>
-                <h3 className="text-2xl text-white bg-gray-800 w-1/2 p-2 m-12">{slides[currentIndex].date}</h3>
+                <h2 className="text-5xl text-white font-semibold m-14 pl-4">{slides[currentIndex].name}</h2>
+                <p className="text-xl text-white m-12 pl-4">{slides[currentIndex].para}</p>
+                <h3 className="text-2xl text-white bg-gray-800 w-1/2 m-12 pl-5">{slides[currentIndex].date}</h3>
               </div>
               <div className="w-1/2 relative pt-6 pl-3">
                 {isSmallView ? (

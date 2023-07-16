@@ -30,7 +30,7 @@ export default function TracksTopic() {
             <ExpandableList />
             <div className="flex flex-row">
               <div className="justify-left h-15 pt-2 pr-4">
-                <img src="./Assets/rightarrow.png" className="w-8 pl-5" />
+                <img src="./Assets/rightarrow.png" className="w-8 pl-[16px] ml-1" />
               </div>
               <div className="pb-3">
                 <a className="text-blue-500 font-semibold text-l">

@@ -3,10 +3,10 @@ import React from "react";
 export default function Holder() {
   return (
     <div
-    className="flex justify-center items-flex-end"
+    className="flex justify-center items-flex-end "
     >
       <div
-        className="pt-6 p-4 shadow-s shadow-gray-800 justify-center mx-auto relative flex flex-row flex-wrap flex-auto gap-x-44 sm:gap-y-6"
+        className="pt-6 p-4 shadow-sm shadow-gray-800 justify-center mx-auto relative flex flex-row flex-wrap flex-auto gap-x-44 sm:gap-y-6"
         style={{ display: "inline-flex" }}
       >
         <div>

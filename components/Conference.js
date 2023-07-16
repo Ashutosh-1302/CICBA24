@@ -32,7 +32,7 @@ export const Conference = () => {
                 paddingTop: "0",
                 marginRight: "auto",
                 fontSize: "16px",
-                ineHeight: "1",
+                lineHeight: "1.5",
               }}
             >
               <span
@@ -45,6 +45,7 @@ export const Conference = () => {
                   paddingLeft: "3px",
                   paddingBottom: "0px",
                   fontFamily: "Times New Roman",
+                  verticalAlign: "middle",
                 }}
               >
                 S
@@ -74,7 +75,6 @@ export const Conference = () => {
               <br />
               <br />
               <strong>
-                {" "}
                 The Sixth conference of this series, CICBA-2024 is inviting all
                 research findings in the field of Computational Intelligence (CI) -
                 both Theories and Applications primarily encompassing the domains
@@ -85,10 +85,7 @@ export const Conference = () => {
               </strong>
             </p>
           </div>
-          <div
-            className="text-xl text-white pt-4 w-full"
-            id="button"
-          >
+          <div className="text-xl text-white pt-4 w-full" id="button">
             <div className="flex flex-col space-y-4">
               <div className="bg-green-800">
                 <div className="block px-2 py-1">
@@ -143,7 +140,7 @@ export const Conference = () => {
       </div>
 
       <div className="pt-4">
-      <h2
+        <h2
           className="text-center text-xl font-bold pl-1"
           style={{
             background:
@@ -155,16 +152,26 @@ export const Conference = () => {
         >
           National Institute Of Technology,Patna
         </h2>
-        <div className="flex flex-row space-x-4 pb-3 p-3" id="institute" >
+        <div className="flex flex-row space-x-4 pb-3 p-3" id="institute">
           <div className="pt-3">
             <img src="Assets/nitpatna.jpg" className="" alt="" />
           </div>
-          <div className="pt-4 pl-6=">
-  <p style={{ marginLeft: 0 }}>
-  National Institute of Technology Patna is the 18th National Institute of Technology created by the Ministry of H.R.D. Government of India after rechristening the erstwhile Bihar College of Engineering Patna on 28. 01. 2004. NIT Patna marked its humble beginning in 1886 with the establishment of pleaders survey training school which was subsequently promoted of Bihar College of Engineering Patna in 1924. This made this institute the 6th Oldest Engineering Institute of India.  The institute is situated on the south bank of holy river Ganges behind Gandhi Ghat, one of the most important and reverential place of Patna. 
-  </p>
-</div>
-</div>
+          <div className="pt-4 pl-6">
+            <p style={{ marginLeft: 0, textAlign: "left" }}>
+              National Institute of Technology Patna is the 18th National
+              Institute of Technology created by the Ministry of H.R.D.
+              Government of India after rechristening the erstwhile Bihar
+              College of Engineering Patna on 28. 01. 2004. NIT Patna marked
+              its humble beginning in 1886 with the establishment of the
+              pleaders' survey training school which was subsequently promoted
+              to Bihar College of Engineering Patna in 1924. This made this
+              institute the 6th Oldest Engineering Institute of India. The
+              institute is situated on the south bank of the holy river Ganges
+              behind Gandhi Ghat, one of the most important and reverential
+              places of Patna.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

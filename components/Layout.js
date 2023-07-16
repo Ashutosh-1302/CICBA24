@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className="w-full flex flex-col items-center overflow-x-hidden">
       {/* Fixed content at the top */}
-      <div className="bg-gray-50 py-4 text-center">
+      <div className="bg-white py-4 text-center">
         <h2 className="text-xl font-semibold">
           Sixth International Conference on
         </h2>
@@ -57,9 +57,12 @@ const Layout = ({ children }) => {
           </a>
         </div>
       </div>
-
+      <div className="bg-gray-50 text-center pt-4 w-full">
+      <h2 className="text-xl font-bold text-orange-500">The proceedings will be published with Springer in their Communications in Computer and Information Science (CCIS) Series (SCImago, Scopus, DBLP)</h2>
+       <p className='inline-block'>  (* Final Approval Pending)</p>
+      </div>
       {/* Content from each page */}
-      <Carousely/>
+      <Carousely className="mt-0"/>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
 
       {/* Footer */}

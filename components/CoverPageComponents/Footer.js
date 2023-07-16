@@ -39,10 +39,12 @@ const Footer = () => {
         <div className="mb-6 lg:mb-0">
           <h4 className="text-lg font-bold mb-2">Contact</h4>
           <hr className="border-red-500 my-2" />
-          <p className="text-gray-400">Email: info@example.com</p>
-          <p className="text-gray-400">Phone: +1 123-456-7890</p>
-          <p className="text-gray-400">
-            Address: 123 Conference Street, City, Country
+          <p className="text-gray-400 pt-1">Email: jps@nitp.ac.in</p>
+          <p className="text-gray-400 pt-1">Phone: +91 85211 59014</p>
+          <p className="text-gray-400 py-1">
+          Organizing Chairs/Program Chairs,CICBA-2023,<br/>
+        National Institute Of Technology Patna,<br/>
+        Ashok Rajpath, Patna - 800005.
           </p>
           <p className="text-gray-400 mt-4">* Final Approval Pending</p>
         </div>

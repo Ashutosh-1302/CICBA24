@@ -73,9 +73,9 @@ export const links = [
     sublinks: [
       {
         sublink: [
-          { name: "- Venue", href: "/Venue" },
-          { name: "- Accomdation", href: "/Accomodation" },
-          { name: "- Tour Guide", href: "/TourGuide" },
+          { name: "- Venue", href: "/Venue/Location" },
+          { name: "- Accomdation", href: "/Venue/Accomodation" },
+          { name: "- Tour Guide", href: "/Venue/TourGuide" },
         ],
       },
     ],
