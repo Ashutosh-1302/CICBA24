@@ -15,19 +15,26 @@ const Footer = () => {
               href="#"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              Facebook
+              <img src='https://img.icons8.com/?size=1x&id=LtK9OaHTp1cv&format=gif' className="h-10 w-12"></img>
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              Twitter
+               <img src='https://img.icons8.com/?size=1x&id=42819&format=png' className="h-10 w-12"></img>
+            
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              Instagram
+             <img src='https://img.icons8.com/?size=1x&id=z6gJ8gyjaapn&format=gif' className="h-10 w-12"></img>
+            </a>
+          < a
+              href="#"
+              className="text-gray-400 hover:text-white transition-colors duration-300"
+            >
+             <img src='https://img.icons8.com/?size=1x&id=tnnUFgHrPmR0&format=gif' className="h-10 w-12"></img>
             </a>
           </div>
           <p className="text-gray-400 my-4">
