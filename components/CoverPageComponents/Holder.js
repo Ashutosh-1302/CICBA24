@@ -11,7 +11,7 @@ export default function Holder() {
       >
         <div>
           <img
-            src="http://www.cicba.in/cicba2023/images/springer-logo.png"
+            src="./Assets/springer-logo.png"
             alt="Springer Logo"
           />
         </div>
@@ -20,19 +20,19 @@ export default function Holder() {
           style={{ textAlign: "center", border: "none", paddingRight: "25px" }}
         >
           <img
-            src="http://www.cicba.in/cicba2023/images/logo.png"
+            src="./Assets/cicba.png"
             alt="CICBA Logo"
             style={{ height: "100px", width: "101px" }}
           />
           <img
-            src="https://www.nitp.ac.in/static/logo512-579d034908ae89b5e0243d1274937d5d.png"
+            src="./Assets/logo.png"
             alt="NITP Logo"
             style={{ height: "108px", width: "105px" }}
           />
         </div>
         <div>
           <img
-            src="http://www.cicba.in/cicba2023/images/ccis_logo.png"
+            src="./Assets/ccis_logo.png"
             alt="CCIC Image"
           />
         </div>

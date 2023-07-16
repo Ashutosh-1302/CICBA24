@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-gray-400 my-4">
-            &copy; 2023 Conference Name. All rights reserved.
+            &copy; 2024 CICBA. All rights reserved.
           </p>
         </div>
 

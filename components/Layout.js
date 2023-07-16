@@ -24,39 +24,45 @@ const Layout = ({ children }) => {
 
       {/* Links section */}
       <div className="p-3 text-center">
-        {/* Links */}
-        {/* Add responsive classes to adjust layout on smaller views */}
-        <div className="flex flex-col md:flex-row md:justify-center md:space-x-4">
-          <a
-            className="block text-xl text-orange-900 font-semibold hover:text-blue-900 pt-2"
-            target="_blank"
-            href="/"
-          >
-            Presentation Template
-          </a>
-          <a
-            className="block text-xl text-green-500 font-semibold hover:text-blue-900 pt-2"
-            target="_blank"
-            href="http://www.cicba.in/cicba2023/CICBA%202023%20ORAL%20List.pdf"
-          >
-            List of papers accepted for oral presentation
-          </a>
-          <a
-            className="block text-xl text-violet-900 font-semibold hover:text-blue-900 pt-2"
-            target="_blank"
-            href="http://www.cicba.in/cicba2023/CICBA2023_Acceptedand_Registered_Papers.pdf"
-          >
-            List of Accepted And Registered Papers
-          </a>
-          <a
-            className="block text-xl text-red-600 font-semibold hover:text-blue-900 pt-2"
-            target="_blank"
-            href="http://www.cicba.in/cicba2023/CICBA%202023%20Program%2027%20Jan.pdf"
-          >
-            Program Schedule
-          </a>
-        </div>
-      </div>
+  {/* Links */}
+  {/* Add responsive classes to adjust layout on smaller views */}
+  <div className="flex flex-col md:flex-row md:justify-center md:space-x-4">
+    <a
+      className="block text-xl text-orange-900 font-semibold pt-2"
+      target="_blank"
+      href="/"
+      style={{ animation: 'blink 0.3s infinite' }}
+    >
+      Presentation Template
+    </a>
+    <a
+      className="block text-xl text-green-500 font-semibold pt-2"
+      target="_blank"
+      href="http://www.cicba.in/cicba2023/CICBA%202023%20ORAL%20List.pdf"
+      style={{ animation: 'blink 1s infinite' }}
+    >
+      List of papers accepted for oral presentation
+    </a>
+    <a
+      className="block text-xl text-violet-900 font-semibold pt-2"
+      target="_blank"
+      href="http://www.cicba.in/cicba2023/CICBA2023_Acceptedand_Registered_Papers.pdf"
+      style={{ animation: 'blink 1s infinite' }}
+    >
+      List of Accepted And Registered Papers
+    </a>
+    <a
+      className="block text-xl text-red-600 font-semibold pt-2"
+      target="_blank"
+      href="http://www.cicba.in/cicba2023/CICBA%202023%20Program%2027%20Jan.pdf"
+      style={{ animation: 'blink 1s infinite' }}
+    >
+      Program Schedule
+    </a>
+  </div>
+</div>
+
+
       <div className="bg-gray-50 text-center pt-4 w-full">
       <h2 className="text-xl font-bold text-orange-500">The proceedings will be published with Springer in their Communications in Computer and Information Science (CCIS) Series (SCImago, Scopus, DBLP)</h2>
        <p className='inline-block'>  (* Final Approval Pending)</p>
